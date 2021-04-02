@@ -1,0 +1,11 @@
+<div *ngIf="student">
+
+    <h2>{{student.name | uppercase}} Details</h2>
+    <div><span>Group Number: </span>{{student.id}}</div>
+    <div>
+      <label>Position:
+        <input [(ngModel)]="student.position" placeholder="position"/>
+      </label>
+    </div>
+  
+</div>
